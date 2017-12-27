@@ -28,5 +28,5 @@ service:
       provider: GitHub
       repo: greghoggard/mu-test
 
-# extensions:
-# - url: https://github.com/stelligent/mu-elasticache/archive/v0.1.zip
+extensions:
+- url: https://github.com/stelligent/mu-elasticache/archive/v0.1.zip
