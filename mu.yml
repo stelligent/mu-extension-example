@@ -2,8 +2,26 @@ namespace: extension
 environments:
 - name: acceptance
 - name: production
+environments:
+  - name: acceptance
+    loadbalancer:
+      hostedzone: elasticoperations.com
+      name: extension
+    cluster:
+      instanceType: t2.medium
+      desiredCapacity: 1
+      maxSize: 2
+  - name: production
+    loadbalancer:
+      hostedzone: demo.elasticoperations.com
+      name: extension
+    cluster:
+      instanceType: t2.medium
+      desiredCapacity: 1
+      maxSize: 2
 service:
   name: extension
+  memory: 1024
   healthEndpoint: /
   port: 80
   pathPatterns:
