@@ -29,4 +29,4 @@ service:
       repo: greghoggard/mu-test
 
 extensions:
-- url: https://github.com/stelligent/mu-elasticache/archive/v0.1.zip
+- url: https://github.com/stelligent/mu-elasticache/archive/v0.2.zip
