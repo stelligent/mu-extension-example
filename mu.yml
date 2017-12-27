@@ -4,6 +4,7 @@ environments:
 - name: production
 service:
   name: extension
+  healthEndpoint: /
   port: 80
   pathPatterns:
   - /*
