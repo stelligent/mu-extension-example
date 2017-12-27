@@ -1,9 +1,9 @@
-namespace: extension
+namespace: extension-test
 environments:
   - name: acceptance
     loadbalancer:
       hostedzone: elasticoperations.com
-      name: extension
+      name: extension-test
     cluster:
       instanceType: t2.medium
       desiredCapacity: 1
@@ -11,13 +11,13 @@ environments:
   - name: production
     loadbalancer:
       hostedzone: demo.elasticoperations.com
-      name: extension
+      name: extension-test
     cluster:
       instanceType: t2.medium
       desiredCapacity: 1
       maxSize: 2
 service:
-  name: extension
+  name: extension-test
   memory: 1024
   healthEndpoint: /
   port: 80
