@@ -1,8 +1,5 @@
 namespace: extension
 environments:
-- name: acceptance
-- name: production
-environments:
   - name: acceptance
     loadbalancer:
       hostedzone: elasticoperations.com
