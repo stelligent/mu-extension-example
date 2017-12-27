@@ -1,0 +1,13 @@
+namespace: mu
+environments:
+- name: acceptance
+- name: production
+service:
+  name: mu-test
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: greghoggard/mu-test
