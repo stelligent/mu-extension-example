@@ -3,7 +3,7 @@ environments:
 - name: acceptance
 - name: production
 service:
-  name: mu-test
+  name: extension
   port: 80
   pathPatterns:
   - /*
