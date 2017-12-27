@@ -1,4 +1,4 @@
-namespace: mu
+namespace: extension
 environments:
 - name: acceptance
 - name: production
