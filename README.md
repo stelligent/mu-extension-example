@@ -1,1 +1,1 @@
-# mu-test
+# mu-extension example
