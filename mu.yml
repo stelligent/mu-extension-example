@@ -26,7 +26,8 @@ service:
   pipeline:
     source:
       provider: GitHub
-      repo: greghoggard/mu-test
+      repo: stelligent/mu-extension-example
 
 extensions:
 - url: https://github.com/stelligent/mu-elasticache/archive/v0.4.zip
+- url: https://github.com/stelligent/mu-elasticsearch/archive/v0.3.zip
