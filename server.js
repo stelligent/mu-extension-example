@@ -8,7 +8,7 @@
     var bodyParser = require('body-parser');         // pull information from HTML POST (express4)
     var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
     var database = require('./config/database');
-    var port     = process.env.PORT || 3000;         // set the port
+    var port     = process.env.PORT || 8080;         // set the port
 
 
     // configuration ===============================================================

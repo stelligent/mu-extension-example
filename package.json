@@ -4,6 +4,9 @@
   "description"  : "Simple todo application.",
   "main"         : "server.js",
   "author"       : "Bogotobogo",
+  "license"      : "MIT",
+  "repository"   : "https://github.com/stelligent/mu-extension-example",
+
   "dependencies" : {
     "express"    : "~4.13.2",
     "mongoose"   : "~3.6.2",

@@ -1,18 +1,19 @@
-# Tells the Docker which base image to start.
-FROM node
+FROM node:carbon
 
-# Adds files from the host file system into the Docker container.
-RUN mkdir -p /application
-WORKDIR /application
+# Create app directory
+WORKDIR /usr/src/app
 
-# Copy the main application.
-COPY . /application
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
 
 RUN npm install
-RUN npm install -g nodemon
+# If you are building your code for production
+# RUN npm install --only=production
 
-#expose a port to allow external access
-EXPOSE 3000
+# Bundle app source
+COPY . .
 
-# Start mean application
-CMD ["nodemon", "server.js"]
+EXPOSE 8080
+CMD [ "npm", "start" ]
