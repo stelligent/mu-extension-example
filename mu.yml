@@ -23,11 +23,18 @@ service:
   port: 80
   pathPatterns:
   - /*
+  database:
+    name: mu-extension-example
   pipeline:
     source:
       provider: GitHub
       repo: stelligent/mu-extension-example
 
+parameters:
+  'ext-database-ext-acceptance':
+    DatabaseMasterUsername: stelligent
+
 extensions:
 - url: https://github.com/stelligent/mu-elasticache/archive/v0.6.zip
 - url: https://github.com/stelligent/mu-elasticsearch/archive/v0.3.zip
+- url: https://github.com/stelligent/mu-mongodb/archive/v0.14.zip
