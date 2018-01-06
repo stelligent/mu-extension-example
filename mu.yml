@@ -23,7 +23,7 @@ service:
   name: ext
   memory: 1024
   healthEndpoint: /
-  port: 3000
+  port: 8080
   pathPatterns:
   - /*
   environment:
