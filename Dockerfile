@@ -2,12 +2,8 @@
 FROM node
 
 # Adds files from the host file system into the Docker container.
-RUN mkdir -p /app
-WORKDIR /app
-COPY . ./
-
-# Sets the current working directory for subsequent instructions
 WORKDIR /
+COPY . ./
 
 RUN npm install
 RUN npm install -g nodemon
