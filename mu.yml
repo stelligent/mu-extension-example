@@ -1,6 +1,9 @@
 namespace: ext
 environments:
   - name: acceptance
+    cluster:
+      keyName: bsj
+      sshAllow: 0.0.0.0/0
     loadbalancer:
       hostedzone: elasticoperations.com
       name: ext
@@ -20,11 +23,14 @@ service:
   name: ext
   memory: 1024
   healthEndpoint: /
-  port: 80
+  port: 3000
   pathPatterns:
   - /*
+  environment:
+    MONGO_URL: mongodb://${DatabaseMasterUsername}:${DatabaseMasterPassword}@${DatabaseEndpointAddress}:${DatabaseEndpointPort}/${DatabaseName}
   database:
     name: mu-extension-example
+    engine: mongodb
   pipeline:
     source:
       provider: GitHub
@@ -33,8 +39,9 @@ service:
 parameters:
   'ext-database-ext-acceptance':
     DatabaseMasterUsername: stelligent
+    ImageId: ami-55ef662f
 
 extensions:
 - url: https://github.com/stelligent/mu-elasticache/archive/v0.6.zip
 - url: https://github.com/stelligent/mu-elasticsearch/archive/v0.3.zip
-- url: https://github.com/stelligent/mu-mongodb/archive/v0.14.zip
+- url: ../mu-mongodb/
