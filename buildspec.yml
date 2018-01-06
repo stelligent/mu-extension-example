@@ -7,5 +7,4 @@ phases:
 
 artifacts:
   files:
-    - mu.yml
-    - Dockerfile
+    - '**/*'
