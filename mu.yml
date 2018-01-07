@@ -9,7 +9,7 @@ environments:
       name: ext
     cluster:
       instanceType: t2.medium
-      desiredCapacity: 1
+      desiredCapacity: 2
       maxSize: 2
   - name: production
     loadbalancer:
@@ -17,7 +17,7 @@ environments:
       name: ext
     cluster:
       instanceType: t2.medium
-      desiredCapacity: 1
+      desiredCapacity: 2
       maxSize: 2
 service:
   name: ext
@@ -42,6 +42,6 @@ parameters:
     ImageId: ami-55ef662f
 
 extensions:
-- url: https://github.com/stelligent/mu-elasticache/archive/v0.6.zip
-- url: https://github.com/stelligent/mu-elasticsearch/archive/v0.3.zip
+#- url: https://github.com/stelligent/mu-elasticache/archive/v0.6.zip
+#- url: https://github.com/stelligent/mu-elasticsearch/archive/v0.3.zip
 - url: ../mu-mongodb/
