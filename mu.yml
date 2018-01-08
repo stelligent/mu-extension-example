@@ -1,20 +1,17 @@
 namespace: ext
 environments:
   - name: acceptance
-    cluster:
-      keyName: bsj
-      sshAllow: 0.0.0.0/0
     loadbalancer:
-      hostedzone: mu-example-acceptance.elasticoperations.com
-      name: ext
+      hostedzone: elasticoperations.com
+      name: ext-acceptance
     cluster:
       instanceType: t2.medium
       desiredCapacity: 2
       maxSize: 2
   - name: production
     loadbalancer:
-      hostedzone: mu-example-production.elasticoperations.com
-      name: ext
+      hostedzone: elasticoperations.com
+      name: ext-prod
     cluster:
       instanceType: t2.medium
       desiredCapacity: 2
