@@ -44,4 +44,4 @@ parameters:
 extensions:
 - url: https://github.com/stelligent/mu-elasticache/archive/v0.6.zip
 - url: https://github.com/stelligent/mu-elasticsearch/archive/v0.3.zip
-- url: ../mu-mongodb/
+- url: https://github.com/stelligent/mu-mongodb/archive/v0.16.zip
