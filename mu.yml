@@ -5,7 +5,7 @@ environments:
       keyName: bsj
       sshAllow: 0.0.0.0/0
     loadbalancer:
-      hostedzone: elasticoperations.com
+      hostedzone: mu-example-acceptance.elasticoperations.com
       name: ext
     cluster:
       instanceType: t2.medium
@@ -13,7 +13,7 @@ environments:
       maxSize: 2
   - name: production
     loadbalancer:
-      hostedzone: demo.elasticoperations.com
+      hostedzone: mu-example-production.elasticoperations.com
       name: ext
     cluster:
       instanceType: t2.medium

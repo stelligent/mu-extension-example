@@ -1,5 +1,4 @@
-// config/database.js
-
 module.exports = {
-    url : process.env.MONGO_URL
+    remoteUrl : 'mongodb://admin:admin@localhost:27017/userInfo',
+    localUrl: 'mongodb://admin:admin@localhost:27017/userInfo'
 };

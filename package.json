@@ -1,16 +1,14 @@
 {
-  "name"         : "node-todo",
-  "version"      : "0.0.0",
-  "description"  : "Simple todo application.",
-  "main"         : "server.js",
-  "author"       : "Bogotobogo",
-  "license"      : "MIT",
-  "repository"   : "https://github.com/stelligent/mu-extension-example",
-  "dependencies" : {
-    "express"    : "~4.13.2",
-    "mongoose"   : "~3.6.2",
-    "morgan"     : "~1.6.1",
-    "body-parser": "~1.14.1",
-    "method-override": "~2.3.5"
+  "name": "user_info",
+  "version": "1.0.0",
+  "description": "Simple MEAN stack application to save user information",
+  "main": "index.js",
+  "author": "Dhanesh Mane",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "mongodb": "^2.2.22",
+    "mongoose": "latest"
   }
 }
